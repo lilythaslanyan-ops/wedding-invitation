@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="hero">
+    <div style="font-size: 1.2em; border-bottom: 1px solid #000; display: inline-block;">28 • 07 • 2026</div>
+    
+    <img src="img.png" alt="Դիանա և Իշխան" class="hero-img">
+    
+    <h1 class="names">Դիանա <br> և <br> Իշխան</h1>
+    <p>Մեծ ուրախությամբ հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենակարևոր օրը:</p>
+</div>
+
+    <div class="timer">
+        <div class="timer-item"><span id="days">00</span><br>Օր</div>
+        <div class="timer-item"><span id="hours">00</span><br>Ժամ</div>
+        <div class="timer-item"><span id="minutes">00</span><br>Րոպե</div>
+        <div class="timer-item"><span id="seconds">00</span><br>Վրկ</div>
+    </div>
+
+    <h2 class="section-title">Ծրագիր</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <i class="fa-solid fa-ring"></i> <strong>12:00 – Հանդիսավոր գրանցում</strong>
+            <p>Մեր միության պաշտոնական արարողությունը, որտեղ կասենք մեր երդումները:</p>
+        </div>
+        <div class="timeline-item">
+            <i class="fa-solid fa-champagne-glasses"></i> <strong>14:00 – Ֆուրշետ</strong>
+            <p>Ջերմ շփում և հյուրասիրություն՝ մինչ հիմնական հանդիսությունը:</p>
+        </div>
+        <div class="timeline-item">
+            <i class="fa-solid fa-utensils"></i> <strong>17:00 – Տոնական բանկետ</strong>
+            <p>Հարսանեկան ճաշկերույթ, պարեր և տոնական երեկո:</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Վայրը</h2>
+    <div style="border: 1px solid #000;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.7148483076467!2d44.58472967624686!3d40.19315897147642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa3435a6bf1ed%3A0xa4f7b58735c29ba5!2z1YzVuNW11aHVrCDUtdaA1ofVodW2!5e0!3m2!1sru!2sam!4v1781460826305!5m2!1sru!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="rsvp-container" style="margin-top: 20px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoAIyfhKIts5UMXZJYU1JO6aBGpaPUrkTvprdsqRnNnpG2Sw/viewform?usp=dialog" target="_blank" class="btn">Հաստատել մասնակցությունը</a>    
+    </div>
+
+</div>
+
+<script>
+    const target = new Date("July 28, 2026 00:00:00").getTime();
+    setInterval(() => {
+        const diff = target - new Date().getTime();
+        document.getElementById("days").innerText = Math.floor(diff / (1000*60*60*24));
+        document.getElementById("hours").innerText = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+        document.getElementById("minutes").innerText = Math.floor((diff % (1000*60*60)) / (1000*60));
+        document.getElementById("seconds").innerText = Math.floor((diff % (1000*60)) / 1000);
+    }, 1000);
+</script>
+</body>
+</html>
