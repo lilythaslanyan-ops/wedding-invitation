@@ -1,66 +1,122 @@
 <!DOCTYPE html>
-<html lang="hy">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img src="demo2.png" alt="Իշխան և Դիանա" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
 
-<div class="container">
-    <div class="hero">
-    <div style="font-size: 1.2em; border-bottom: 1px solid #000; display: inline-block;">28 • 07 • 2026</div>
+    <div style="text-align: center; margin: 30px 20px; font-family: sans-serif; line-height: 1.8;">
+        <h2 style="margin-bottom: 15px;">Հարգելի՛ հյուրեր</h2>
+        <p>
+            Սիրով հրավիրում ենք Ձեզ մեզ հետ կիսելու<br>
+            մեր կյանքի ամենակարևոր ու հիշարժան օրը՝<br>
+            մեր հարսանիքը:
+        </p>
+    </div>
+
+    <img src="cal2.png" alt="Save the date" style="width: 100%; max-width: 400px; display: block; margin: 30px auto;">
+    <br>
+    <br>
+
+    <div style="text-align: center; margin: 30px 20px; font-family: 'Georgia', serif; line-height: 1.8;">
+        <h1 style="margin: 0 0 20px 0; font-size: 1.8em; letter-spacing: 2px;">ԾՐԱԳԻՐ</h1>
     
-    <img src="img.png" alt="Դիանա և Իշխան" class="hero-img">
+        <p style="margin: 0;">Պսակադրությունը կանցկացվի</p>
+        <p style="margin: 0; font-weight: bold; font-size: 1.1em;">Սուրբ Սարգիս եկեղեցում</p>
+        <p style="margin: 0 0 20px 0; color: #555;">ք․ Եղվարդ, Սաֆարյան 2 փ.</p>
     
-    <h1 class="names">Դիանա <br> և <br> Իշխան</h1>
-    <p>Մեծ ուրախությամբ հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենակարևոր օրը:</p>
+        <img src="church.png" alt="Սուրբ Սարգիս եկեղեցի" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px auto; border-radius: 8px;">
+    
+        <a href="https://www.google.com/maps/search/Սուրբ+Սարգիս+եկեղեցի+Եղվարդ" target="_blank" style="display: inline-block; padding: 15px 40px; background-color: #dcd7ce; color: #333; text-decoration: none; border-radius: 30px; font-weight: bold; border: 1px solid #aaa; font-size: 1em;">
+            Գտնել քարտեզով
+        </a>
+    </div>
+    <br>
+    <hr style="width: 50%; border: 0; border-top: 1px solid #ccc; margin: 40px auto;">
+
+    <div style="text-align: center; margin: 40px 20px; font-family: 'Georgia', serif; line-height: 1.8;">
+        <p style="margin: 0;">Տոնական խնջույքը կանցկացվի</p>
+        <p style="margin: 0; font-weight: bold; font-size: 1.1em;">Royal Yerevan ռեստորանում</p>
+        <p style="margin: 0 0 20px 0; color: #555;">ք․ Երևան, Բագրևանդի 102 փ.</p>
+    
+        <img src="restaurant.png" alt="Royal Yerevan" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 20px auto; border-radius: 8px;">
+    
+        <a href="https://maps.app.goo.gl/Vv3e1r5FnsLNSgMn9" target="_blank" style="display: inline-block; padding: 15px 40px; background-color: #dcd7ce; color: #333; text-decoration: none; border-radius: 30px; font-weight: bold; border: 1px solid #aaa; font-size: 1em;">
+            Գտնել քարտեզով
+        </a>
+    </div>
+    <br>
+
+    <div class="schedule-container">
+    <div class="schedule-item left">
+        <div class="time-bg">13:00</div>
+        <div class="time-content">
+            <span style="font-weight: bold;">13:00</span> – Պսակադրության արարողություն
+        </div>
+    </div>
+
+    <div class="schedule-item right">
+        <div class="time-bg">16:30</div>
+        <div class="time-content">
+            <span style="font-weight: bold;">16:30</span> – Հյուրերի դիմավորում
+        </div>
+    </div>
+
+    <div class="schedule-item left">
+        <div class="time-bg">17:00</div>
+        <div class="time-content">
+            <span style="font-weight: bold;">17:00</span> – Հարսանեկան խնջույք
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <div style="text-align: center; margin: 40px 20px; font-family: 'Georgia', serif; color: #5a544a;">
+    <h2 style="font-size: 1.4em; margin-bottom: 15px; font-weight: normal; letter-spacing: 1px;">Մնացել է․․․</h2>
+    
+    <div id="countdown" style="display: flex; justify-content: center; align-items: center; gap: 12px; font-size: 2em; font-weight: 500;">
+        <div id="days">00</div> :
+        <div id="hours">00</div> :
+        <div id="minutes">00</div> :
+        <div id="seconds">00</div>
+    </div>
+    
+    <div style="display: flex; justify-content: center; gap: 38px; font-size: 0.8em; color: #8c8578; margin-top: 5px;">
+        <span>օր</span> <span>ժ</span> <span>ր</span> <span>վ</span>
+    </div>
+    </div>
+
+    <div style="text-align: center; margin: 60px 20px 40px 20px; font-family: 'Georgia', serif;">
+    <p style="color: #555; margin-bottom: 20px; font-size: 1em;">
+        Խնդրում ենք հաստատել Ձեր ներկայությունը<br>մինչև հուլիսի 1-ը։
+    </p>
+    
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoAIyfhKIts5UMXZJYU1JO6aBGpaPUrkTvprdsqRnNnpG2Sw/viewform?usp=dialog" 
+       target="_blank" 
+       style="display: inline-block; 
+              padding: 16px 45px; 
+              background-color: #5a544a; 
+              color: #ffffff; 
+              text-decoration: none; 
+              border-radius: 30px; 
+              font-weight: bold; 
+              font-size: 1em; 
+              letter-spacing: 1px;
+              box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        Հաստատել ներկայությունը
+    </a>
 </div>
 
-    <div class="timer">
-        <div class="timer-item"><span id="days">00</span><br>Օր</div>
-        <div class="timer-item"><span id="hours">00</span><br>Ժամ</div>
-        <div class="timer-item"><span id="minutes">00</span><br>Րոպե</div>
-        <div class="timer-item"><span id="seconds">00</span><br>Վրկ</div>
-    </div>
 
-    <h2 class="section-title">Ծրագիր</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <i class="fa-solid fa-ring"></i> <strong>12:00 – Հանդիսավոր գրանցում</strong>
-            <p>Մեր միության պաշտոնական արարողությունը, որտեղ կասենք մեր երդումները:</p>
-        </div>
-        <div class="timeline-item">
-            <i class="fa-solid fa-champagne-glasses"></i> <strong>14:00 – Ֆուրշետ</strong>
-            <p>Ջերմ շփում և հյուրասիրություն՝ մինչ հիմնական հանդիսությունը:</p>
-        </div>
-        <div class="timeline-item">
-            <i class="fa-solid fa-utensils"></i> <strong>17:00 – Տոնական բանկետ</strong>
-            <p>Հարսանեկան ճաշկերույթ, պարեր և տոնական երեկո:</p>
-        </div>
-    </div>
 
-    <h2 class="section-title">Վայրը</h2>
-    <div style="border: 1px solid #000;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.7148483076467!2d44.58472967624686!3d40.19315897147642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa3435a6bf1ed%3A0xa4f7b58735c29ba5!2z1YzVuNW11aHVrCDUtdaA1ofVodW2!5e0!3m2!1sru!2sam!4v1781460826305!5m2!1sru!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
 
-    <div class="rsvp-container" style="margin-top: 20px;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoAIyfhKIts5UMXZJYU1JO6aBGpaPUrkTvprdsqRnNnpG2Sw/viewform?usp=dialog" target="_blank" class="btn">Հաստատել մասնակցությունը</a>    
-    </div>
 
-</div>
 
-<script>
-    const target = new Date("July 28, 2026 00:00:00").getTime();
-    setInterval(() => {
-        const diff = target - new Date().getTime();
-        document.getElementById("days").innerText = Math.floor(diff / (1000*60*60*24));
-        document.getElementById("hours").innerText = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
-        document.getElementById("minutes").innerText = Math.floor((diff % (1000*60*60)) / (1000*60));
-        document.getElementById("seconds").innerText = Math.floor((diff % (1000*60)) / 1000);
-    }, 1000);
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
